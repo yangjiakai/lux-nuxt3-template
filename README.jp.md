@@ -22,20 +22,18 @@
 </p>
 
 <h4 align='center'>
-<a href="https://lux.vuetify3.com/">Live Demo</a>
+<a href="https://lux-nuxt3-template.netlify.app//">Live Demo</a>
 </h4>
 
 <br>
 
 <p align='center'>
-<a href="https://github.com/yangjiakai/jk-vuetify3-lux-admin/blob/main/README.jp.md">English</a> | <a href="https://github.com/yangjiakai/jk-vuetify3-lux-admin/blob/main/README.zh-CN.md">简体中文</a>| <b>日本語</b>
+<a href="https://github.com/yangjiakai/lux-nuxt3-template/blob/main/README.jp.md">English</a> | <a href="https://github.com/yangjiakai/lux-nuxt3-template/blob/main/README.zh-CN.md">简体中文</a>| <b>日本語</b>
 </p>
 
 ## 📖Introduction
 
-> Goal: Creating the best Vuetify 3 Admin open-source template.
-
-Built upon the elegant themes of Vuetify, we have established a clear and efficient project structure, integrating the latest technology frameworks. This project aims to address a wide range of common technical requirements and features, while incorporating an AI assistant for a more intelligent experience. Additionally, we ensure that all pages are adaptive across multiple devices, achieving a seamless cross-platform compatibility.
+> base template for lux-nuxt3
 
 ## 📖Other Versions
 
@@ -108,10 +106,10 @@ Nuxt3 Simplified Version [lux-nuxt3-template](https://github.com/yangjiakai/lux-
 
 ## 👻Try it now!
 
-```
-git clone https://github.com/yangjiakai/lux-nuxt3.git
+```bash
+git clone https://github.com/yangjiakai/lux-nuxt3-template.git
 
-cd lux-nuxt3
+cd lux-nuxt3-template
 
 npm install
 

@@ -22,13 +22,13 @@
 </p>
 
 <h4 align='center'>
-<a href="https://lux.vuetify3.com/">Live Demo</a>
+<a href="https://lux-nuxt3-template.netlify.app//">Live Demo</a>
 </h4>
 
 <br>
 
 <p align='center'>
-<b>English</b> | <a href="https://github.com/yangjiakai/jk-vuetify3-lux-admin/blob/main/README.zh-CN.md">简体中文</a>| <a href="https://github.com/yangjiakai/jk-vuetify3-lux-admin/blob/main/README.jp.md">日本語</a>
+<b>English</b> | <a href="https://github.com/yangjiakai/lux-nuxt3-template/blob/main/README.zh-CN.md">简体中文</a>| <a href="https://github.com/yangjiakai/lux-nuxt3-template/blob/main/README.jp.md">日本語</a>
 </p>
 
 ## 📖Introduction
@@ -108,11 +108,10 @@ Nuxt3 Simplified Version [lux-nuxt3-template](https://github.com/yangjiakai/lux-
 
 ## 👻Try it now!
 
-```
-git clone https://github.com/yangjiakai/lux-nuxt3.git
+```bash
+git clone https://github.com/yangjiakai/lux-nuxt3-template.git
 
-cd lux-nuxt3
-
+cd lux-nuxt3-template
 npm install
 
 npm run dev
