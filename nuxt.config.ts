@@ -20,6 +20,8 @@ export default defineNuxtConfig({
     "@pinia/nuxt", // needed
     "@pinia-plugin-persistedstate/nuxt",
     "@nuxt/icon",
+    "nuxt-lodash",
+    "@vueuse/nuxt",
   ],
 
   vite: {
