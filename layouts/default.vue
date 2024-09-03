@@ -1,27 +1,15 @@
-<!--
-* @Component: 
-* @Maintainer: J.K. Yang
-* @Description: 
--->
 <script setup lang="ts">
-import { RouterView } from "vue-router";
-import MainSiderbar from "@/components/app/main-sidebar/MainSiderbar.vue";
-import AppBar from "@/components/app/app-bar/AppBar.vue";
-
+import Header from "@/components/layout/Header.vue";
+import Footer from "@/components/layout/Footer.vue";
+import Sidebar from "@/components/layout/Sidebar.vue";
 </script>
-
-<style scoped lang="scss"></style>
-
 <template>
   <v-app>
-    <MainSiderbar />
-    <AppBar />
-    <v-main class="fill-height">
-      <div class="fill-height pa-5">
-        <RouterView />
-      </div>
-
+    <Sidebar />
+    <Header />
+    <Footer />
+    <v-main>
+      <NuxtPage />
     </v-main>
-
   </v-app>
 </template>

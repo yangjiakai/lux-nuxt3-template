@@ -1,0 +1,38 @@
+/* 隐藏WebKit浏览器（Chrome、Safari等）的滚动条 */
+.ps {
+  overflow: hidden !important;
+}
+
+.ps::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* 隐藏Firefox的滚动条 */
+.ps {
+  scrollbar-width: none;
+}
+
+/* 隐藏IE和Edge的滚动条 */
+.ps {
+  -ms-overflow-style: none;
+}
+
+// 美化默认滚动条
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 7px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb-horizontal {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #ccc;
+}

@@ -1,42 +1,25 @@
-import { createResolver } from "@nuxt/kit";
-import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 
-const { resolve } = createResolver(import.meta.url);
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,
+  compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  typescript: { shim: false },
-  build: { transpile: ["vuetify"] },
-  sourcemap: { server: false, client: false },
-  routeRules: {
-    '/**': { ssr: false }
+  build: {
+    transpile: ["vuetify"],
   },
-  modules: [
 
-    '@pinia/nuxt',
-    '@pinia-plugin-persistedstate/nuxt',
-    async (options, nuxt) => {
+  css: ["~/assets/css/tailwind.css", "~/assets/scss/main.scss"],
+  modules: [
+    (_options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) => {
-        config.plugins ||= [];
-        config.plugins.push(
-          vuetify({
-            styles: { configFile: resolve("/assets/scss/variables.scss") },
-          }));
+        // @ts-expect-error
+        config.plugins.push(vuetify({ autoImport: true }));
       });
     },
-    ['@nuxtjs/google-fonts', {
-      families: {
-        Quicksand: true,
-        Inter: [400, 700],
-        'Josefin+Sans': true,
-        Lato: [100, 300],
-        Raleway: {
-          wght: [100, 400],
-          ital: [100]
-        },
-      }
-    }],
+    "vue3-perfect-scrollbar/nuxt",
+    "@pinia/nuxt", // needed
+    "@pinia-plugin-persistedstate/nuxt",
+    "@nuxt/icon",
   ],
 
   vite: {
@@ -46,4 +29,15 @@ export default defineNuxtConfig({
       },
     },
   },
-})
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
+  pinia: {
+    autoImports: ["defineStore", "acceptHMRUpdate"],
+  } as any,
+});

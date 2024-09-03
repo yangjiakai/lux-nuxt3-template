@@ -1,24 +1,10 @@
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
-export const useAppStore = defineStore({
-  id: 'app',
+export const useAppStore = defineStore("app", {
   state: () => ({
-    mainSidebar: true,
-
+    theme: "dark",
+    sidebar: true,
   }),
-  persist: [
-    {
-      paths: [],
-      storage: localStorage,
-    },
-  ],
-
-  getters: {
-
-  },
-  actions: {
-    toggleSidebar() {
-      this.mainSidebar = !this.mainSidebar
-    }
-  },
-})
+  actions: {},
+  persist: true,
+});

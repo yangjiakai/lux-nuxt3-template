@@ -1,0 +1,39 @@
+// 全局边框覆盖
+[class*="--variant-outlined"] {
+  border-color: rgba(var(--v-border-color), var(--v-border-opacity)) !important;
+  border-radius: var(--v-theme-border-radius) !important;
+}
+
+// 全局字体覆盖
+html {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+// Vuetify 特定覆盖
+.v-application {
+  font-family: 'Quicksand', sans-serif !important;
+
+  .v-application--wrap {
+    font-family: 'Quicksand', sans-serif !important;
+  }
+
+  // 覆盖所有文本类
+  [class*="text-"] {
+    font-family: 'Quicksand', sans-serif !important;
+  }
+
+  // 覆盖按钮文本
+  .v-btn {
+    font-family: 'Quicksand', sans-serif !important;
+  }
+
+  // 覆盖输入框文本
+  .v-input {
+    font-family: 'Quicksand', sans-serif !important;
+  }
+}
+
+// 额外的全局选择器，以防有遗漏
+body {
+  font-family: 'Quicksand', sans-serif !important;
+}

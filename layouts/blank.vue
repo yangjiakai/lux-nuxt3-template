@@ -1,11 +1,14 @@
-// ===============================
-|| Blank Layout ||
-=============================== //
-<script setup lang="ts">
-import { RouterView } from "vue-router";
-</script>
+<!--
+* @Component: 
+* @Maintainer: J.K. Yang
+* @Description: 
+-->
+<script setup lang="ts"></script>
+
 <template>
-  <v-app>
-    <RouterView />
-  </v-app>
+  <div class="h-screen w-screen">
+    <NuxtPage />
+  </div>
 </template>
+
+<style scoped lang="scss"></style>
