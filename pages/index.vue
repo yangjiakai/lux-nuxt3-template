@@ -5,8 +5,17 @@
 -->
 <script setup lang="ts">
 import { useCounterStore } from "~/stores/demo";
-
+const { locale, setLocale } = useI18n();
 const counter = useCounterStore();
+const items = [
+  {
+    name: "African Elephant",
+    species: "Loxodonta africana",
+    diet: "Herbivore",
+    habitat: "Savanna, Forests",
+  },
+  // ... more items
+];
 </script>
 
 <template>
@@ -38,6 +47,10 @@ const counter = useCounterStore();
       <v-btn icon="mdi-heart"></v-btn>
       <Icon name="uil:github" style="color: black" />
     </div>
+    <div>
+      <p>{{ $t("common.subNav") }}</p>
+    </div>
+    <v-data-table :items="items"></v-data-table>
   </div>
 </template>
 

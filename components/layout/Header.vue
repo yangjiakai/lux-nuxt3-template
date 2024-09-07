@@ -5,6 +5,7 @@
 -->
 <script setup lang="ts">
 import { useAppStore } from "~/stores/app";
+import LanguageSwitcher from "../common/LanguageSwitcher.vue";
 const appStore = useAppStore();
 </script>
 
@@ -24,6 +25,7 @@ const appStore = useAppStore();
         >
       </transition>
     </template>
+    <LanguageSwitcher />
   </v-app-bar>
 </template>
 
